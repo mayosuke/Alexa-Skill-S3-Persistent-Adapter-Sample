@@ -1,0 +1,21 @@
+{
+  "name": "alexa-skill-sample-nodejs-s3-persistent-adapter",
+  "version": "1.0.0",
+  "description": "Sample code for Alexa Skills Kit for Node.js S3 persistent adapter",
+  "main": "index.js",
+  "keywords": [
+    "alexa",
+    "skill",
+    "s3-persistent-adapter"
+  ],
+  "author": "mayosuke",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ask-sdk-core": "^2.1.0",
+    "ask-sdk-model": "^1.7.1",
+    "ask-sdk-s3-persistence-adapter": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.11.5"
+  }
+}

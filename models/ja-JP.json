@@ -1,0 +1,71 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "サンプルカフェ",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OrderIntent",
+                    "slots": [
+                        {
+                            "name": "drink",
+                            "type": "DRINK_TYPE"
+                        }
+                    ],
+                    "samples": [
+                        "{drink} ください"
+                    ]
+                },
+                {
+                    "name": "RegularOrderIntent",
+                    "slots": [],
+                    "samples": [
+                        "いつものください"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DRINK_TYPE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "コーラ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "緑茶"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "紅茶"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "コーヒー"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
