@@ -1,0 +1,78 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "persistent caffe",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OrderIntent",
+                    "slots": [
+                        {
+                            "name": "drink",
+                            "type": "DRINK_TYPE"
+                        }
+                    ],
+                    "samples": [
+                        "{drink} please"
+                    ]
+                },
+                {
+                    "name": "RegularOrderIntent",
+                    "slots": [],
+                    "samples": [
+                        "Same one as usual please",
+                        "I'll have my usual",
+                        "I'll have the usual",
+                        "a regular one please"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DRINK_TYPE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "coke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coffee"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
